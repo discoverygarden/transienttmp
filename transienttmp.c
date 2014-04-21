@@ -1,4 +1,5 @@
 /* Start a shell in a new namespace */
+#define _GNU_SOURCE /* Required for CLONE_NEWNS */
 #include <stdio.h>
 #include <sched.h>
 #include <unistd.h>
